@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" href="assets/main_bg.png" type="image/x-icon" />
+
+        <title> Rides</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav__header">
+                    <div class="nav__logo">
+                        <a href="index.html" class="logo">
+                            <h2>Spin</h2>
+                            <i class="ri-riding-line"></i>
+                        </a>
+                    </div>
+                    <div class="nav__menu__btn" id="menu-btn">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+                <ul class="nav__links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="ride.html">Rides</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="client.html">Testimonials</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <section class="deals" id="deals">
+            <div class="section__container deals__container">
+                <h2 class="section__header">Which one will you ride today?</h2>
+                <p class="section__description">
+                    Explore our cycle rental deals and choose the perfect ride for you. Whether you're looking for
+                    adventure
+                    or relaxation, we've got the right deal at an amazing price!
+                </p>
+                <div class="deals__tabs">
+                    <button class="btn active" data-id="Duranta">Duranta</button>
+                    <button class="btn" data-id="Veloce">Veloce</button>
+                    <button class="btn" data-id="Phoniex">Phoniex</button>
+                </div>
+
+                <!-- Duranta Tab Content -->
+                <div id="Duranta" class="tab__content active">
+                    <div class="deals__card">
+                        <img src="assets/d1.jpeg" alt="Duranta Steel 1-Speed Muscular Premier" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>Duranta Steel 1-Speed Muscular Premier</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-brake-fill"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> 1-Speed Gear
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/d2.jpeg" alt="Duranta Mascular-26" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(450)</span>
+                        </div>
+                        <h4>Duranta Mascular-26" (Multi-Speed) Premier</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-steering-2-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-up-line"></i></span> Multi-Speed Gears
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/d3.jpeg" alt="Duranta Durjoy 2-Bar 26" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>Duranta Durjoy 2-Bar 26" (Single speed)</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-steering-2-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-up-line"></i></span> 18 Speed Gears
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/d-5.jpeg" alt="Duranta Durjoy 2-Bar 26" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>Duranta Avenger Premier Green 26 Inch Bicycle 847288</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 2 people
+                            </div>
+                            <div>
+                                <span><i class="ri-steering-2-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-up-line"></i></span> 18 Speed Gears
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/d-5.jpg" alt="Duranta Durjoy 2-Bar 26" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>DURANTA ALLOY 30-SPD VENOM -R27.5 RED-847698</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-steering-2-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-up-line"></i></span> 18 Speed Gears
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div class="deals__card">
+                        <img src="assets/d-8.jpg" alt="Duranta Durjoy 2-Bar 26" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>DURANTA ALLOY 30-SPD VENOM -R27.5 YELLOW</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-steering-2-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-up-line"></i></span> 18 Speed Gears
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/d-6.jpg" alt="Duranta Durjoy 2-Bar 26" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>DURANTA STEEL 24-SPEED VENOM -R27.5 RED-847694</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-steering-2-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-up-line"></i></span> 18 Speed Gears
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/d-7.jpg" alt="Duranta Durjoy 2-Bar 26" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>DURANTA Jupiter-Red-20inch-847151</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 2 people
+                            </div>
+                            <div>
+                                <span><i class="ri-steering-2-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-up-line"></i></span> 18 Speed Gears
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+
+                </div>
+
+                <!-- Veloce Tab Content -->
+                <div id="Veloce" class="tab__content">
+                    <div class="deals__card">
+                        <img src="assets/Veloce Stunt-master.jpg" alt="Veloce Stunt Master" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(200)</span>
+                        </div>
+                        <h4>Veloce Stunt Master</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-wheelchair-line"></i></span> Stunt Capable
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> 20" Wheels
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Freestyle
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+
+
+                    <div class="deals__card">
+                        <img src="./assets/Veloce-Inferno3.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(100)</span>
+                        </div>
+                        <h4>Veloce Inferno 3.0</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-wheelchair-line"></i></span> Stunt Capable
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> 20" Wheels
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Freestyle
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/Veloce-Inferno_1.0-Bike.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(180)</span>
+                        </div>
+                        <h4>Veloce Inferno 1.0</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-wheelchair-line"></i></span> Stunt Capable
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> 20" Wheels
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Freestyle
+                            </div>
+                        </div>
+
+                        <hr />
+
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/Outrage-605_Grey-scaled.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(180)</span>
+                        </div>
+                        <h4>Veloce outgrage-605 grayscaled</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-wheelchair-line"></i></span> Stunt Capable
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> 20" Wheels
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Freestyle
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/veloce 1.0.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(550)</span>
+                        </div>
+                        <h4>Veloce Dark 1.0</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-wheelchair-line"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> Single-Speed Gear
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Manual
+                            </div>
+                        </div>
+
+                        <hr />
+                    </div>
+                </div>
+
+                <!-- Phoniex Tab Content -->
+                <div id="Phoniex" class="tab__content">
+                    <div class="deals__card">
+                        <img src="assets/p1.jpg" alt="Phoniex YE20S2902D" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(200)</span>
+                        </div>
+                        <h4>Phoniex YE20S2902D</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-wheelchair-line"></i></span> Multi speed
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> 20" Wheels
+                            </div>
+                            <div>
+                                <span><i class="ri-riding-fill"></i></span> Freestyle
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div class="deals__card">
+                        <img src="assets/p2.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(350)</span>
+                        </div>
+                        <h4>Phoniex YE16A2601SPT</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-brake-fill"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> Single-Speed Gear
+                            </div>
+                            <div>
+                                <span><i class="ri-bicycle-line"></i></span> Manual
+                            </div>
+                        </div>
+
+                        <hr />
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/p3.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(350)</span>
+                        </div>
+                        <h4>Phoniex TORNADO</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-brake-fill"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> Single-Speed Gear
+                            </div>
+                            <div>
+                                <span><i class="ri-bicycle-line"></i></span> Manual
+                            </div>
+                        </div>
+
+                        <hr />
+
+                    </div>
+
+                    <div class="deals__card">
+                        <img src="assets/P4.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(350)</span>
+                        </div>
+                        <h4>Phoniex YE16A260HU54</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-brake-fill"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> Single-Speed Gear
+                            </div>
+                            <div>
+                                <span><i class="ri-bicycle-line"></i></span> Manual
+                            </div>
+                        </div>
+
+                        <hr />
+
+                    </div>
+                    <div class="deals__card">
+                        <img src="assets/P5.jpg" alt="deals" />
+                        <div class="deals__rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-line"></i></span>
+                            <span>(350)</span>
+                        </div>
+                        <h4>Phoniex YE16A267065</h4>
+                        <div class="deals__card__grid">
+                            <div>
+                                <span><i class="ri-group-line"></i></span> 1 Rider
+                            </div>
+                            <div>
+                                <span><i class="ri-brake-fill"></i></span> Hand-Operated Brakes
+                            </div>
+                            <div>
+                                <span><i class="ri-speed-line"></i></span> Single-Speed Gear
+                            </div>
+                            <div>
+                                <span><i class="ri-bicycle-line"></i></span> Manual
+                            </div>
+                        </div>
+
+                        <hr />
+
+
+                    </div>
+
+                    <!-- AceX Tab Content -->
+
+
+                </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Spin. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <script>
+            // JavaScript to toggle between tabs
+            const buttons = document.querySelectorAll('.deals__tabs .btn');
+            const contents = document.querySelectorAll('.tab__content');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const id = button.getAttribute('data-id');
+
+                    // Remove active class from all buttons and contents
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents.forEach(content => content.classList.remove('active'));
+
+                    // Add active class to clicked button and corresponding content
+                    button.classList.add('active');
+                    document.getElementById(id).classList.add('active');
+                });
+            });
+        </script>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+    </html>

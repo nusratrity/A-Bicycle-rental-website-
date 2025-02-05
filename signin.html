@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In & Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="assets/main_bg.png" type="image/x-icon" />
+  <style>
+    /* General Reset */ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #44037c, #7544b4, #cebbe6);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3)
+    }
+
+    /* Auth Container */
+    .auth-container {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      max-width: 1000px;
+      background: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Close Button */
+    .auth-form .close-btn {
+      position: absolute;
+      top: 10px;
+      left: 230px; /* Adjusted position slightly to the right */
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Left Image Section */
+    .auth-image {
+      flex: 1;
+      background: url('./assets/login .jpg') no-repeat center center/cover;
+      display: none;
+    }
+
+    /* Form Section */
+    .auth-form {
+      flex: 1;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 15px 12px 45px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .input-group input:focus {
+      border-color: #6c63ff;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #846ff8;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #2e2a40;
+    }
+
+    .toggle-link {
+      text-align: center;
+      margin-top: 15px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .toggle-link a {
+      color: #6c63ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .toggle-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 768px) {
+      .auth-image {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-image"></div>
+
+    <div class="auth-form">
+      <button class="close-btn" onclick="goBack()">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div id="signInForm">
+        <h2>Welcome Back!</h2>
+        <p>Sign in to continue</p>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button>Sign In</button>
+        <div class="toggle-link">
+          Don't have an account? <a href="#" onclick="toggleForm('signUpForm')">Sign Up</a>
+        </div>
+      </div>
+
+      <div id="signUpForm" style="display: none;">
+        <h2>Join Us!</h2>
+        <p>Sign up to get started</p>
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Full Name" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button>Sign Up</button>
+        <div class="toggle-link">
+          Already have an account? <a href="#" onclick="toggleForm('signInForm')">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm(formId) {
+      document.getElementById('signInForm').style.display = formId === 'signInForm' ? 'block' : 'none';
+      document.getElementById('signUpForm').style.display = formId === 'signUpForm' ? 'block' : 'none';
+    }
+
+    function goBack() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

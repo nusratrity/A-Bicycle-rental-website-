@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="assets/main_bg.png" type="image/x-icon" />
+
+    <title> Bicycle Rental</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html" class="logo">
+                        <h2>Spin</h2>
+                        <i class="ri-riding-line"></i>
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="ride.html">Rides</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="client.html">Testimonials</a></li>
+                <li><a href=""></a></li>
+            </ul>
+            <div class="nav__btns">
+
+                <button class="btn" id="login-btn">Login</button>
+            </div>
+        </nav>
+        <div class="header__container" id="home">
+            <div class="header__image">
+                <img src="./assets/main bg 2.png" alt="header" />
+            </div>
+            <div class="header__content">
+                <h2>👍 100% Trusted rental platform in Dhaka</h2>
+                <h1>FAST AND EASY WAY TO RENT A BICYCLE</h1>
+                <p class="section__description">
+                    Discover a seamless bicycle rental experience with us.Unlock your campus adventure! Convenient,
+                    affordable, and eco-friendly rides tailored for students.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="header__form">
+        <form id="rentalForm">
+            <div class="input__group">
+                <label for="location">Pick-up & Return Location</label>
+                <select name="location" id="location">
+                    <option value="" disabled selected>Select your area</option>
+                    <option value="Dhanmondi">Dhanmondi</option>
+                    <option value="Uttara">Uttara</option>
+                    <option value="Banani">Banani</option>
+                    <option value="Mirpur">Mirpur</option>
+                    <option value="Gulshan">Gulshan</option>
+                    <option value="Motijheel">Motijheel</option>
+                </select>
+            </div>
+
+            <div class="input__group">
+                <label for="cycleType">Cycle Name</label>
+                <select name="cycleType" id="cycleType">
+                    <option value="" disabled selected>Select a cycle</option>
+                    <option value="Duranta Steel 1-Speed Muscular Premier">Duranta Steel 1-Speed Muscular Premier
+                    </option>
+                    <option value="Duranta Mascular-26\" (Multi-Speed) Premier">Duranta Mascular-26" (Multi-Speed)
+                        Premier</option>
+                    <option value="Duranta Durjoy 2-Bar 26\" (Single speed)">Duranta Durjoy 2-Bar 26" (Single speed)
+                    </option>
+                    <option value="Veloce Stunt Master">Veloce Stunt Master</option>
+                    <option value="Veloce Inferno 3.0">Veloce Inferno 3.0</option>
+                    <option value="Veloce Inferno 1.0">Veloce Inferno 1.0</option>
+                    <option value="Veloce Dark 1.0">Veloce Dark 1.0</option>
+                    <option value="Veloce Outrage-605 grayscaled">Veloce Outrage-605 grayscaled</option>
+                    <option value="Phoniex YE20S2902D">Phoniex YE20S2902D</option>
+                    <option value="Phoniex YE20S234ERST">Phoniex YE20S234ERST</option>
+                    <option value="Phoniex YE16A2601SES">Phoniex YE16A2601SES</option>
+                    <option value="Phoniex TORNADO">Phoniex TORNADO</option>
+                    <option value="Phoniex YE16A267065">Phoniex YE16A267065</option>
+                </select>
+            </div>
+
+            <div class="input__group">
+                <label for="start">Pick-up Date</label>
+                <input type="datetime-local" name="start" id="start" />
+            </div>
+            <div class="input__group">
+                <label for="stop">Return Date</label>
+                <input type="datetime-local" name="stop" id="stop" />
+            </div>
+            <button class="btn" type="submit"><i class="ri-arrow-right-line"></i></button>
+        </form>
+
+        <div id="summaryContainer" class="summary__container" style="display: none;">
+            <h2>Rental Summary</h2>
+            <div id="summary" style="font-size: 16px; color: #333;"></div>
+            <a href="/" class="back__link">Go Back</a>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section__container about__container" id="about">
+        <h2 class="section__header">How it work</h2>
+        <p class="section__description">
+            Renting a bicycle with us is simple! Choose your bike, pick your dates, and complete your booking. We'll
+            take care of the rest, ensuring a smooth start to your ride.
+        </p>
+        <div class="about__grid">
+            <div class="about__card">
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                <h4>Choose Location</h4>
+                <p>
+                    Select from a variety of pick-up locations that best suit your
+                    needs, whether it's close to home, work, or airport.
+                </p>
+            </div>
+            <div class="about__card">
+                <span><i class="ri-calendar-event-fill"></i></span>
+                <h4>Pick-up Date</h4>
+                <p>
+                    Choose the exact date and time for your cycle pick-up, ensuring that
+                    your cycle is ready when you need it.
+                </p>
+            </div>
+            <div class="about__card">
+                <span><i class="ri-riding-fill"></i></span>
+                <h4>Book your Cycle</h4>
+                <p>
+                    Complete your booking with just a few clicks, and we'll prepare your
+                    vehicle to ensure a hassle-free pick-up.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="choose__container" id="choose">
+        <div class="choose__image">
+            <img src="assets/CHOOSE.avif" alt="choose" />
+        </div>
+        <div class="choose__content">
+            <h2 class="section__header">Why choose our bicycle rental service</h2>
+            <p class="section__description">
+                Experience the convenience and freedom of our bicycle rental service. We offer reliable bikes,
+                exceptional customer support, and flexible rental options to ensure a smooth ride.
+            </p>
+            <div class="choose__grid">
+                <div class="choose__card">
+                    <span><i class="ri-customer-service-line"></i></span>
+                    <div>
+                        <h4>Customer Support</h4>
+                        <p>Our dedicated support team is here to assist you 24/7.</p>
+                    </div>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    <div>
+                        <h4>Multiple Pickup Locations</h4>
+                        <p>Convenient bike pickup and drop-off locations near you.</p>
+                    </div>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-wallet-line"></i></span>
+                    <div>
+                        <h4>Best Price</h4>
+                        <p>Competitive rates with great value for every rental.</p>
+                    </div>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-calendar-close-line"></i></span>
+                    <div>
+                        <h4>Flexible Rental Options</h4>
+                        <p>Choose from daily, weekly, or monthly rental plans.</p>
+                    </div>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-verified-badge-line"></i></span>
+                    <div>
+                        <h4>Well-Maintained Bikes</h4>
+                        <p>Choose from a range of trusted and well-maintained bicycles.</p>
+                    </div>
+                </div>
+                <div class="choose__card">
+                    <span><i class="ri-user-star-line"></i></span>
+                    <div>
+                        <h4>Experienced Guides</h4>
+                        <p>Join guided tours with knowledgeable and friendly guides.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="subscribe__container">
+        <div class="subscribe__image">
+            <img src="assets/SUBSCRIBE.png" alt="subscribe" />
+        </div>
+        <div class="subscribe__content">
+            <h2 class="section__header">
+                Subscribe for the latest cycle rental updates
+            </h2>
+            <p class="section__description">
+                Be the first to know! Sign up now to receive exclusive offers, exciting updates, and special promotions
+                directly in your inbox. Don’t miss out on great savings and the newest rides in our collection!
+            </p>
+            <form action="/">
+                <input type="text" placeholder="Your Email" />
+                <button class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <div class="notification-container"></div>
+
+
+
+
+    <section class="section__container download__container" id="contact">
+        <div class="download__grid">
+            <div class="download__content">
+                <h2 class="section__header">Download the free Spin app</h2>
+                <p>
+                    Download the Spin app to manage your bookings, find exclusive
+                    deals, and access 24/7 support, all from your mobile device.
+                </p>
+                <div class="download__links">
+                    <a href="#">
+                        <img src="assets/store.jpg" alt="app store" />
+                    </a>
+                    <a href="#">
+                        <img src="assets/play.png" alt="play" />
+                    </a>
+                </div>
+            </div>
+            <div class="download__image">
+                <img src="assets/smartphone.webp" alt="download" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="#" class="logo">
+                        <h2>Spin</h2>
+                        <i class="ri-riding-line"></i>
+                    </a>
+                </div>
+                <p>
+                    We're here to provide you with the best vehicles and a seamless
+                    rental experience. Stay connected for updates, special offers, and
+                    more. Drive with confidence!
+                </p>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Our Services</h4>
+                <ul class="footer__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#deals">Rental Deals</a></li>
+                    <li><a href="#choose">Why Choose Us</a></li>
+                    <li><a href="#client">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Vehicle Model</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Duranta</a></li>
+                    <li><a href="#">Acex</a></li>
+                    <li><a href="#">Veloce</a></li>
+                    <li><a href="#">Phoniex</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Our PickUp locations</h4>
+                <ul class="footer__links">
+                    <ul class="footer__links">
+                        <li><a href="#">Uttara</a></li>
+                        <li><a href="#">Mirpur</a></li>
+                        <li><a href="#">Dhanmondi</a></li>
+                        <li><a href="#">Banani</a></li>
+                        <li><a href="#">Gulshan</a></li>
+                        <li><a href="#">Motijheel</a></li>
+
+
+                    </ul>
+
+               
+            </div>
+        </div>
+        <div class="footer__bar">
+            Spin.All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
